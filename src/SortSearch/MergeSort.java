@@ -68,7 +68,6 @@ public class MergeSort {
     }
 
     if (fIdx < firstHalf.length) {
-
       // $
       while (mIdx < arrayToSort.length) {
         arrayToSort[mIdx++] = firstHalf[fIdx++];
