@@ -18,14 +18,20 @@ public class BFS {
 
     while (queue.size() != 0) {
 
+      // For level wise node print : Just decrement value nodesInCurrentLevel
+
       Node node = queue.remove();
       System.out.println(node.getData());
 
       if (null != root.getLeftNode()) // $
         queue.add(root.getLeftNode());
+      // For level wise node print : Increment the value of nodesToPrint
 
       if (null != root.getRightNode()) // $
         queue.add(root.getRightNode());
+
+      // For level wise node print : Chekc if nodesInCurrentLevel = 0 then
+      // add new line and nodesToPrint = nodesInCurrentLevel
 
     }
   }
