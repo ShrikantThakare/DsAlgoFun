@@ -19,7 +19,7 @@ public class LCA_Tree {
     Node lca_l = LCA(root.getLeftNode(), a, b);
     Node lca_r = LCA(root.getRightNode(), a, b);
 
-    if (lca_l == null && lca_r == null)
+    if (lca_l != null && lca_r != null)
       return root;
 
     return lca_l == null ? lca_r : lca_l;
