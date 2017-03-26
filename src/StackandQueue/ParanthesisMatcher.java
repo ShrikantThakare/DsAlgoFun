@@ -22,7 +22,9 @@ public class ParanthesisMatcher {
       if (input.charAt(i) == '[')
         stack.push(']');
 
-      if (input.charAt(i) == ']' || input.charAt(i) == '}' || input.charAt(i) == ')') {
+      if (input.charAt(i) == ']' ||
+              input.charAt(i) == '}' ||
+              input.charAt(i) == ')') {
 
         if (input.charAt(i) != stack.pop())
           return false;
