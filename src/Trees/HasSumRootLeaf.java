@@ -13,7 +13,7 @@ public class HasSumRootLeaf {
 
     // Check condition
     if (node.getLeftNode() == null && node.getRightNode() == null) {
-      return sum == (int) node.getData();
+      return sum == (int) node.getData();//Core logic
     }
 
     sum = sum - (int) node.getData();//Core logic
